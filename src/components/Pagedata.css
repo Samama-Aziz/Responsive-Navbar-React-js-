@@ -1,0 +1,14 @@
+.title{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+    color: aqua;
+    top: 50%;
+    font-size: 1.5rem;
+}
+.title span{
+    color: black;
+    font-weight: 800;
+}
