@@ -1,14 +1,33 @@
-.title{
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-    color: aqua;
-    top: 50%;
-    font-size: 1.5rem;
+.title {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: whitesmoke;
+  text-shadow: 10px black;
+  top: 40%;
+  font-size: 2rem;
 }
-.title span{
-    color: black;
-    font-weight: 800;
+.title span,
+.title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 800;
 }
+.title h1{
+    color:aqua ;
+    font-weight: 900;
+    text-decoration: wavy;
+  }  
+  body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(114,21,1);
+    background: linear-gradient(146deg, rgba(114,21,1,1) 0%, rgba(253,29,29,1) 60%);
+  }
+  .title span{
+    margin-left: 15px;
+  }
