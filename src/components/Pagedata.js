@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import"./Pagedata.css"
 
 const Pagedata = (props) => {
+  useEffect(() => {
+    document.body.style.backgroundColor = props.backgroundColor;
+    return () => {
+
+      document.body.style.backgroundColor = '';
+    };
+  }, [props.backgroundColor]);
+
   return (
     <div className='title'>
       <h2>Welcom To React Nav-Bar</h2>
