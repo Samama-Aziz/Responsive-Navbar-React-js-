@@ -5,6 +5,7 @@ import myImage from './383985_key_lock_password_protection_safe_icon.png';
 import { MenuData } from "./MenuData";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from "react-router-dom";
 
 
 function Navbar() {
@@ -15,10 +16,10 @@ function Navbar() {
     };
     return (
         <nav className='navbar'>
-            <a href="#" className='logo'>
+            <NavLink to ="/" className='logo'>
                 <img src={myImage} alt=""  className='logoimg'/>
                 <h1>REACT</h1>
-            </a>
+            </NavLink>
             <div className='menu-icons'>
             <FontAwesomeIcon icon={clicked ? faTimes : faBars} onClick={handleClick} className='icons'/>
             </div>
@@ -27,9 +28,9 @@ function Navbar() {
                 {MenuData.map((item, index) => {
                     return (
                         <li key={index}>
-                            <a href={item.url} className={item.ClassN}>
+                            <NavLink to ={item.url} className={item.ClassN}>
                                 {item.title}
-                            </a>
+                            </NavLink>
                         </li>
                     );
                 })}
