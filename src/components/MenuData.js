@@ -13,7 +13,7 @@ export const MenuData = [
     },
     {
         title: "Servies",
-        url: "/servies",
+        url: "/services",
         ClassN: "Nav-Links",
 
     },
