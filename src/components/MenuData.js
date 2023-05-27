@@ -1,25 +1,25 @@
 export const MenuData = [
     {
         title: "Home",
-        url: "#",
+        url: "/",
         ClassN: "Nav-Links",
 
     },
     {
         title: "About",
-        url: "#",
+        url: "/about",
         ClassN: "Nav-Links",
 
     },
     {
         title: "Servies",
-        url: "#",
+        url: "/servies",
         ClassN: "Nav-Links",
 
     },
     {
         title: "Contact",
-        url: "#",
+        url: "/contact",
         ClassN: "Nav-Links",
 
     }
